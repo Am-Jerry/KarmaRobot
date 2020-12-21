@@ -127,10 +127,10 @@ DEFAULT_WELCOME_MESSAGES = [
     "Prepare for trouble...And make it double",  #Pokemon
     "Hey {first}, are You Challenging Me?",  #Shaggy
     "Oh? You're Approaching Me?",  #jojo
-    "Ho… mukatta kuruno ka?", #jojo jap ver
+    "Ho… mukatta kuruno ka?",  #jojo jap ver
     "I can't beat the shit out of you without getting closer",  #jojo
     "Ho ho! Then come as close as you'd like.",  #jojo
-    "Hoho! Dewa juubun chikazukanai youi", #jojo jap ver
+    "Hoho! Dewa juubun chikazukanai youi",  #jojo jap ver
     "Guess who survived his time in Hell, {first}.",  #jojo
     "How many loaves of bread have you eaten in your lifetime?",  #jojo
     "What did you say? Depending on your answer, I may have to kick your ass!",  #jojo
