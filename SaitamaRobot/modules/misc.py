@@ -3,6 +3,17 @@ from SaitamaRobot.modules.disable import DisableAbleCommandHandler
 from SaitamaRobot import dispatcher
 from SaitamaRobot.modules.helper_funcs.alternate import typing_action, send_action
 
+from telegram import (
+    Message,
+    Chat,
+    MessageEntity,
+    InlineKeyboardMarkup,
+    InlineKeyboardButton,
+    ParseMode,
+    ChatAction,
+    TelegramError,
+)
+
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
 from telegram.ext.dispatcher import run_async
