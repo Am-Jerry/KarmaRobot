@@ -130,11 +130,13 @@ def markdown_help(update: Update, context: CallbackContext):
 __help__ = """
 *Available commands:*
 *Markdown:*
- • `/markdownhelp`*:* quick summary of how markdown works in telegram - can only be called in private chats
+ • `/markdownhelp`*:* quick summary on text markdown. markdown works in telegram - can only be called in private chats
 *Paste:*
  • `/paste`*:* Saves replied content to `nekobin.com` and replies with a url
 *React:*
  • `/react`*:* Reacts with a random reaction 
+*Rmeme:*
+ • `/rmeme`*:* Sends you a random reddit pictures
 *Urban Dictonary:*
  • `/ud <word>`*:* Type the word or expression you want to search use
 *Wikipedia:*
@@ -152,13 +154,16 @@ Output: `1.0 USD = 75.505 INR`
 
 ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group)
 MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help)
+RMEME_HANDLER = DiasableAbleCommandHandler ("rmeme", rmemes)
 
 dispatcher.add_handler(ECHO_HANDLER)
 dispatcher.add_handler(MD_HELP_HANDLER)
+dispatcher.add_handler(RMEME_HANDLER)
 
 __mod_name__ = "Extras"
-__command_list__ = ["id", "echo"]
+__command_list__ = ["id", "echo" , "rmeme"]
 __handlers__ = [
     ECHO_HANDLER,
     MD_HELP_HANDLER,
+    RMEME_HANDLER,
 ]
