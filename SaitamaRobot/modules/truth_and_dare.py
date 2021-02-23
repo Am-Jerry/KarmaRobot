@@ -1,6 +1,6 @@
 import html
 import random
-import SaitamaRobot.modules.truth_and_dare_string as truth_and_dare_string
+import SaitamaRobot.modules.truth_and_dare_strings as truth_and_dare_string
 from SaitamaRobot import dispatcher
 from telegram import ParseMode, Update, Bot
 from SaitamaRobot.modules.disable import DisableAbleCommandHandler
