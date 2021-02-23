@@ -12,7 +12,7 @@ jikan = Jikan()
 
 
 @run_async
-def manime(update: Update, context: CallbackContext):
+def anime(update: Update, context: CallbackContext):
     msg = update.effective_message
     args = context.args
     query = " ".join(args)
@@ -85,7 +85,7 @@ def manime(update: Update, context: CallbackContext):
     
 
 @run_async
-def mcharacter(update: Update, context: CallbackContext):
+def character(update: Update, context: CallbackContext):
     msg = update.effective_message
     res = ""
     args = context.args
@@ -120,7 +120,7 @@ def mcharacter(update: Update, context: CallbackContext):
         
         
 @run_async
-def mupcoming(update: Update, context: CallbackContext):
+def upcoming(update: Update, context: CallbackContext):
     msg = update.effective_message
     rep = "<b>Upcoming anime</b>\n"
     later = jikan.season_later()
@@ -135,7 +135,7 @@ def mupcoming(update: Update, context: CallbackContext):
     
     
 @run_async
-def mmanga(update: Update, context: CallbackContext):
+def manga(update: Update, context: CallbackContext):
     msg = update.effective_message
     args = context.args
     query = " ".join(args)
