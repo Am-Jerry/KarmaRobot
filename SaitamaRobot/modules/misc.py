@@ -61,6 +61,57 @@ def markdown_help_sender(update: Update):
         "[URL](example.com) [button](buttonurl:github.com) "
         "[button2](buttonurl://google.com:same)")
 
+@run_async
+@send_action(ChatAction.UPLOAD_PHOTO)
+def rmemes(update, context):
+    msg = update.effective_message
+    chat = update.effective_chat
+
+    SUBREDS = [
+        "meirl",
+        "dankmemes",
+        "AdviceAnimals",
+        "memes",
+        "meme",
+        "memes_of_the_dank",
+        "PornhubComments",
+        "teenagers",
+        "memesIRL",
+        "insanepeoplefacebook",
+        "terriblefacebookmemes",
+    ]
+
+    subreddit = random.choice(SUBREDS)
+    res = r.get(f"https://meme-api.herokuapp.com/gimme/{subreddit}")
+
+    if res.status_code != 200:  # Like if api is down?
+        msg.reply_text("Sorry some error occurred :(")
+        return
+    else:
+        res = res.json()
+
+    rpage = res.get(str("subreddit"))  # Subreddit
+    title = res.get(str("title"))  # Post title
+    memeu = res.get(str("url"))  # meme pic url
+    plink = res.get(str("postLink"))
+
+    caps = f"- <b>Title</b>: {title}\n"
+    caps += f"- <b>Subreddit:</b> <pre>r/{rpage}</pre>"
+
+    keyb = [[InlineKeyboardButton(text="Subreddit Postlink 🔗", url=plink)]]
+    try:
+        context.bot.send_photo(
+            chat.id,
+            photo=memeu,
+            caption=(caps),
+            reply_markup=InlineKeyboardMarkup(keyb),
+            timeout=60,
+            parse_mode=ParseMode.HTML,
+        )
+
+    except BadRequest as excp:
+        return msg.reply_text(f"Error! {excp.message}")
+
 
 @run_async
 def markdown_help(update: Update, context: CallbackContext):
