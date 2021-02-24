@@ -81,7 +81,7 @@ And the following:
 SAITAMA_IMG = "https://telegra.ph/file/a679bddcb5e135e098145.png"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
+Karma is hosted by @MeKarToon and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
