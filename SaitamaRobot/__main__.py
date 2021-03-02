@@ -71,7 +71,6 @@ the things I can help you with.
    • in a group: will redirect you to pm, with all that chat's settings.
 
 
-{}
 And the following:
 """.format(
     dispatcher.bot.first_name, ""
