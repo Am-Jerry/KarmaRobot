@@ -136,7 +136,7 @@
          "value": ""
       },
       "ALLOW_EXCL": {
-         "description": "Set this to True if you want "!" to be a command prefix along with "/". Recommended is True",
+         "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
          "value": "True"
       },
       "DONATION_LINK": {
