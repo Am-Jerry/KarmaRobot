@@ -3,7 +3,7 @@ emoji
 lxml
 beautifulsoup4
 requests
-sqlalchemy
+sqlalchemy==1.3.20
 python-telegram-bot==12.8
 pyrogram
 psycopg2-binary
@@ -13,6 +13,7 @@ spongemock
 zalgo-text
 geopy
 nltk
+html2text
 psutil
 aiohttp>=2.2.5
 Pillow>=4.2.0
