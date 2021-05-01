@@ -19,6 +19,4 @@ Karma is a moduar Telegram-Python-bot running on python3 with a sqlalchemy datab
 
 The Support group can be reached out to at [Karma Support Chat](https://t.me/KarmaSupportChat), where you can ask for help about [Karma Akabane](https://t.me/TheKarmaBot), discover/request new features, report bugs, and stay in the loop whenever a new update is available ;)
 
-<p align="center">
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/IAmKartoon/)</br>
-</p>
