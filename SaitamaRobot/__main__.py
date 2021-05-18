@@ -209,12 +209,12 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🔔 Updates Channel",
-                             url="https://t.me/KarmaBotUpdates")
+                             url="https://t.me/HeavenUpdates")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🧾 Logs Channel",
-                             url="https://t.me/KarmaLogs")
+                             text="🧾 Main Channel",
+                             url="https://t.me/AkabaneTM")
                      ],
                      [
                          InlineKeyboardButton(
