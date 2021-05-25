@@ -264,7 +264,7 @@ def gban(update: Update, context: CallbackContext):
     try:
         bot.send_message(
             user_id,
-            "New EVENT"
+            "<b>New EVENT</b>"
             "You have been marked as Malicious and as such have been banned from any future groups we manage."
             f"\n<b>Reason:</b> <code>{html.escape(user.reason)}</code>"
             f"</b>Appeal Chat:</b> @{SUPPORT_CHAT}",
@@ -312,7 +312,7 @@ def ungban(update: Update, context: CallbackContext):
         chat_origin = f"<b>{chat.id}</b>\n"
 
     log_message = (
-        f"Global Ban Seized\n"
+        f"<b>Global Ban Seized</b>\n"
         f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
         f"<b>Sudo Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>Unbanned User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
@@ -524,7 +524,7 @@ def __user_info__(user_id):
         if user.reason:
             text += f"\n<b>Reason:</b> <code>{html.escape(user.reason)}</code>"
         text += f"\n<b>Appeal Chat:</b> @{SUPPORT_CHAT}"
-    else:
+    else: 
         text = text.format("???")
     return text
 
